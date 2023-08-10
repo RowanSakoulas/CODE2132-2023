@@ -1,0 +1,18 @@
+{
+  "name": "code2132-2023",
+  "version": "1.0.0",
+  "description": "GH to ThreeJS working files",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
