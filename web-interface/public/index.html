@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Urban Designer</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
   <style>
     /* for full screen canvas, use these styles */
     html, body {
@@ -33,7 +34,38 @@
   </style>
 </head>
 <body>
+
+  <nav class="navbar">
+    <div class="logo">CODE2132 Assessment 3 Group 2</div>
+
+    <ul class="nav-links">
+
+      <div class="menu">
+
+        <li><a href="/">1</a></li>
+        <li><a href="/">2</a></li>
+
+        <li class="services">
+          <a href="/">3</a>
+
+          <ul class="dropdown">
+            <li><a href="/">1</a></li>
+            <li><a href="/">2</a></li>
+            <li><a href="/">3</a></li>
+          </ul>
+
+        </li>
+
+        <li><a href="/">4</a></li>
+        <li><a href="/">5</a></li>
+      </div>
+    </ul>
+  </nav>
+
+<div class="main">
 <h1>Urban Designer</h1>
+<br>
+
 <p>
   <label for="enableAnalysis">Enable Analysis:</label>
   <input type="checkbox" id="enableAnalysis">
@@ -42,14 +74,18 @@
 <input type="range" min="1000" max="10000" value="0" step="1" id="populationSlider">
 <p>Seed Number: <span id="SeedValue">0</span></p>
 <input type="range" min="0" max="100" value="0" step="1" id="seedSlider">
-<br><br>
-<button id="updateButton">Update Values</button>
-<br><br>
+<br>
+
+
+<div class="container">
 <script src="app.js"></script>
 <!-- this is the container where the three.js scene will go -->
 <div id="container">
-  <button id="refreshButton" onclick="refreshScene()">Refresh Scene</button><br><br>
+  <button id="refreshButton" onclick="refreshScene()">Refresh Scene</button>
+  <button id="updateButton">Update Values</button>
 </div>
+</div>
+
 <!-- these are the required scripts for the three.js scene -->
 <script src="../js/three.min.js"></script>
 <script src="../js/OrbitControls.js"></script>
@@ -57,5 +93,8 @@
 
 <!-- this is your app's js file -->
 <script src="../js/app.js"></script>
+
+</div>
+
 </body>
 </html>
