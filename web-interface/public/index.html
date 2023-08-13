@@ -63,28 +63,43 @@
   </nav>
 
 <div class="main">
+
+<div class="app-div">
+<div class="title-text">
 <h1>Urban Designer</h1>
+</div>
 <br>
 
-<p>
-  <label for="enableAnalysis">Enable Analysis:</label>
-  <input type="checkbox" id="enableAnalysis">
-</p>
-<p>Population Number: <span id="PopulationValue">0</span></p>
-<input type="range" min="1000" max="10000" value="0" step="1" id="populationSlider">
-<p>Seed Number: <span id="SeedValue">0</span></p>
-<input type="range" min="0" max="100" value="0" step="1" id="seedSlider">
-<br>
+<div class="main-div">
+  <div class="sidebar-div">
+    <p>
+      <label for="enableAnalysis">Enable Analysis:</label>
+      <input type="checkbox" id="enableAnalysis">
+    </p>
+    <br>
+    <p>Population Number: <span id="PopulationValue">0</span></p>
+    <input type="range" min="1000" max="10000" value="0" step="1" id="populationSlider">
+    <br>
+    <p>Seed Number: <span id="SeedValue">0</span></p>
+    <input type="range" min="0" max="100" value="0" step="1" id="seedSlider">
+    <br>
+    <div id="button">
+      <button id="refreshButton" onclick="refreshScene()">Refresh Scene</button>
+      <button id="updateButton">Update Values</button>
+    </div>
+  </div>
+  <div class="bodyarea-div">
+    <div class="container">
+      <script src="app.js"></script>
+      <!-- this is the container where the three.js scene will go -->
+      <div id="container">
 
+      </div>
+      </div>
+  </div>
+  </div>
+</div>
 
-<div class="container">
-<script src="app.js"></script>
-<!-- this is the container where the three.js scene will go -->
-<div id="container">
-  <button id="refreshButton" onclick="refreshScene()">Refresh Scene</button>
-  <button id="updateButton">Update Values</button>
-</div>
-</div>
 
 <!-- these are the required scripts for the three.js scene -->
 <script src="../js/three.min.js"></script>
