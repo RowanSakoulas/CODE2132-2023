@@ -55,7 +55,6 @@ body {
   .bodyarea-div {
     width: 80%;
     min-height:800px;
-    background-color: rgb(11, 19, 22);
     float: right;
     margin-right: 40px;
   }
@@ -123,7 +122,7 @@ body {
   
   /* DROPDOWN MENU */
   .services {
-    position: relative; 
+    position: relative;
   }
   
   .dropdown {
@@ -133,6 +132,12 @@ body {
     display: none;
     border-radius: 8px;
     top: 30px;
+
+    left: 50%;
+    right: auto;
+    text-align: center;
+    transform: translate(-50%, 0);
+    z-index:10;
   }
   
   .dropdown li + li {
