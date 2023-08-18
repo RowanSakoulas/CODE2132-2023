@@ -71,7 +71,7 @@ function loadScene() {
 
   loader.load(
       // resource URL
-      "./assets/para-urban-model.json",
+      "./assets/group-urban-plan.json",
 
       // onLoad callback
       function (obj) {
